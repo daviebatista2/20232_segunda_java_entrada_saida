@@ -10,6 +10,7 @@ public class SumTwoNumbers {
         System.out.println("Digite o segundo operando"); 
         segundoOperando = leitor.nextDouble();
         resultadoSoma = primeiroOperando + segundoOperando;
-        System.out.println(resultadoSoma);
+        leitor.close();
+        System.out.println("O resultado é: " + resultadoSoma);
     }
 }
