@@ -1,16 +1,14 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 public class SumTwoNumbers {
     public static void main(String [] args) {
         double primeiroOperando;
         double segundoOperando;
         double resultadoSoma;
-        Scanner leitor = new Scanner(System.in);
-        System.out.println("Digite o primeiro operando"); 
-        primeiroOperando = leitor.nextDouble();
-        System.out.println("Digite o segundo operando"); 
-        segundoOperando = leitor.nextDouble();
+
+        primeiroOperando = Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro operando"));
+        segundoOperando = Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo operando"));
         resultadoSoma = primeiroOperando + segundoOperando;
-        leitor.close();
-        System.out.println("O resultado é: " + resultadoSoma);
+        JOptionPane.showMessageDialog(null, "O resultado é " + resultadoSoma);
     }
 }
